@@ -24,7 +24,9 @@ dependencies:
   - flake8
   - isort
   - pre-commit
-  - pytest # REQUIRED, DO NOT REMOVE
+  - pytest
+  - pytest-cov
+  - pytest-sugar
   # Visualization
   - cartopy
   - matplotlib
