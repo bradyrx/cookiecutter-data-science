@@ -1,4 +1,4 @@
-.PHONY: clean data lint requirements
+.PHONY: clean data lint requirements repo
 
 #################################################################################
 # GLOBALS                                                                       #
@@ -17,6 +17,10 @@ endif
 #################################################################################
 # COMMANDS                                                                      #
 #################################################################################
+## Create Github repository and commit cookiecutter files
+repo:
+	./create_repo.sh
+
 
 ## Install/Update  Python Dependencies
 requirements: test_environment
