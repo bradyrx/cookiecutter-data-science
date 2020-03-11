@@ -27,6 +27,14 @@ $ conda install cookiecutter
 ------------
 
     cookiecutter https://github.com/bradyrx/cookiecutter-climate-science
+    
+Then move into the new folder and run `make repo`, which will automatically create the Github repo for your project. You'll have to enter your Github password.
+
+Following this, run `make create_environment` to create a conda environment specifically for this project. Follow that with `make requirements` to install the default package requirements. You can update `environment.yml` to add/remove packages to this environment.
+
+Finally, run `make pre-commit` to install the `pre-commit` rules. [pre-commit](https://pre-commit.com/) is an awesome service that runs a bunch of tests/formatting scripts prior to the user being able to commit their code. This will ensure that it looks good stylistically, passes `flake8` tests, etc.
+
+For Travis to work, I believe you'll need to go to https://travis-ci.com/ and connect Travis to your repository. You can also ensure that Travis runs on your Pull Requests. I haven't tested this just yet.
 
 
 ### The resulting directory structure
@@ -74,17 +82,3 @@ The directory structure of your new project looks like this:
     |
     ├── create_repo.sh    <- Script to create Github repository for this folder.
 ```
-
-## Contributing
-
-We welcome contributions! [See the docs for guidelines](https://drivendata.github.io/cookiecutter-data-science/#contributing).
-
-### Installing development requirements
-------------
-
-    pip install -r requirements.txt
-
-### Running the tests
-------------
-
-    py.test tests
