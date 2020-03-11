@@ -5,7 +5,7 @@
 #################################################################################
 
 PROJECT_DIR := $(shell dirname $(realpath $(lastword $(MAKEFILE_LIST))))
-PROJECT_NAME = {{ cookiecutter.repo_name }}
+PROJECT_NAME = {{ cookiecutter.project_name.lower().replace(' ', '_') }}
 PYTHON_INTERPRETER = "python3"
 
 ifeq (,$(shell which conda))
@@ -27,7 +27,7 @@ requirements: test_environment
 	conda env update -f environment.yml
 
 # data: requirements
-#	$(PYTHON_INTERPRETER) {{ cookiecutter.repo_name }}/data/make_dataset.py data/raw data/processed
+#	$(PYTHON_INTERPRETER) $(PROJECT_NAME)/data/make_dataset.py data/raw data/processed
 
 ## Delete all compiled Python files
 clean:
@@ -36,7 +36,7 @@ clean:
 
 ## Lint using flake8
 lint:
-	flake8 {{ cookiecutter.repo_name }}
+	flake8 $(PROJECT_NAME) 
 
 ## Setup pre-commit
 pre-commit:

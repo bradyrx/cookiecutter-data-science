@@ -23,7 +23,7 @@ install:
   - python setup.py install --user
 
 script:
-  - coverage run --source {{ cookiecutter.repo_name }} -m py.test
+  - coverage run --source {{ cookiecutter.project_name.lower().replace(' ', '_') }} -m py.test
   - coverage report
 
 after_success:

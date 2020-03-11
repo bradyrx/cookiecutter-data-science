@@ -1,4 +1,4 @@
-{{cookiecutter.project_name}}
+{{ cookiecutter.project_name.lower().replace(' ', '_') }}
 ==============================
 
 {{cookiecutter.description}}
@@ -28,8 +28,8 @@ Project Organization
     │                         installed via `conda env update -f environment.yml`
     │
     ├── setup.py           <- makes project pip installable (pip install -e .) so src can be imported
-    ├── {{ cookiecutter.repo_name }}    <- Source code for use in this project.
-    │   ├── __init__.py    <- Makes {{ cookiecutter.repo_name }} a Python module
+    ├── {{ cookiecutter.project_name.lower().replace(' ', '_') }}    <- Source code for use in this project.
+    │   ├── __init__.py    <- Makes {{ cookiecutter.project_name.lower().replace(' ', '_') }} a Python module
     │   │
     │   ├── data           <- Scripts to download or generate data
     │   │   └── make_dataset.py
