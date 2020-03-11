@@ -6,7 +6,7 @@
 
 PROJECT_DIR := $(shell dirname $(realpath $(lastword $(MAKEFILE_LIST))))
 PROJECT_NAME = {{ cookiecutter.repo_name }}
-PYTHON_INTERPRETER = {{ cookiecutter.python_interpreter }}
+PYTHON_INTERPRETER = "python3"
 
 ifeq (,$(shell which conda))
 HAS_CONDA=False

@@ -6,5 +6,4 @@
     "description": "A short description of the project.",
     "github_username": "Destination gihub org or username",
     "open_source_license": ["MIT", "BSD-3-Clause", "No license file"],
-    "python_interpreter": "python3"
 }
