@@ -6,7 +6,6 @@ repos:
       - id: trailing-whitespace
       - id: end-of-file-fixer
       - id: check-docstring-first
-      - id: check-yaml
       - id: double-quote-string-fixer
       - id: debug-statements
       - id: check-merge-conflict
