@@ -36,6 +36,14 @@ Project Organization
     │   │
     │   └── visualization  <- Scripts to create exploratory and results oriented visualizations
     │       └── visualize.py
+    |
+    ├── .gitignore         <- Tells Github which files to ignore when adding to repository.
+    |
+    ├── .pre-commit-config.yaml <- Configuration file for `pre-commit`.
+    |
+    ├── .travis.yml           <- Configuration file for Travis Continuous Integration.
+    |
+    ├── create_repo.sh    <- Script to create Github repository for this folder.
 
 
 --------
