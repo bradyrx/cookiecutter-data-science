@@ -1,6 +1,6 @@
-# Cookiecutter Data Science
+# Cookiecutter Climate Science
 
-_A logical, reasonably standardized, but flexible project structure for doing and sharing data science work._
+_A trimmped down version of cookiecutter data science for publishable climate science projects._
 
 
 #### [Project homepage](http://drivendata.github.io/cookiecutter-data-science/)
@@ -8,7 +8,7 @@ _A logical, reasonably standardized, but flexible project structure for doing an
 
 ### Requirements to use the cookiecutter template:
 -----------
- - Python 2.7 or 3.5
+ - Python 3.8
  - [Cookiecutter Python package](http://cookiecutter.readthedocs.org/en/latest/installation.html) >= 1.4.0: This can be installed with pip by or conda depending on how you manage your Python packages:
 
 ``` bash
@@ -26,10 +26,7 @@ $ conda install cookiecutter
 ### To start a new project, run:
 ------------
 
-    cookiecutter https://github.com/drivendata/cookiecutter-data-science
-
-
-[![asciicast](https://asciinema.org/a/244658.svg)](https://asciinema.org/a/244658)
+    cookiecutter https://github.com/bradyrx/cookiecutter-climate-science
 
 
 ### The resulting directory structure
