@@ -38,6 +38,10 @@ clean:
 lint:
 	flake8 {{ cookiecutter.repo_name }}
 
+## Setup pre-commit
+pre-commit:
+	pre-commit install
+
 ## Set up python interpreter environment
 create_environment:
 ifeq (True,$(HAS_CONDA))
