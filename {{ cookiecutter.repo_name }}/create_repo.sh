@@ -1,6 +1,6 @@
 #!/bin/bash
 # Borrowed from Julius Busecke's cookiecutter.
-curl -u '{{ cookiecutter.github_username }}' https://api.github.com/user/repos -d '{"name":"{{ cookiecutter.project_name.lower().replace(' ', '_') }}", "private":{{ cookiecutter.repo_private }}, "description": {{ cookiecutter.description }}}'
+curl -u '{{ cookiecutter.github_username }}' https://api.github.com/user/repos -d '{"name":"{{ cookiecutter.project_name.lower().replace(' ', '_') }}", "private":{{ cookiecutter.repo_private }}}'
 
 # Link local repository to git
 git init
